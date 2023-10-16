@@ -1,0 +1,395 @@
+:root{
+    --primaryColor:#1f7614;
+    --whiteColor:#d61c1c;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:#bff2cc;
+    border-bottom: 2px solid #ce2e2e;
+    z-index: 99;
+    
+}
+
+.logo{
+    font-weight: 550;
+    font-size: 25px;
+    letter-spacing: 1.5;
+}
+
+.nav-menus a { 
+    margin: 0 10px;
+    text-decoration: none;   
+}
+
+.nav-menus a:hover{
+    color: #59ccafec;
+}
+
+.btnLogin{
+    border: 2px solid var(--primaryColor);
+    background-color:#74deb9;
+    border-radius: 24px;
+    color: #991414;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.btnLogin:hover{
+    color:rgb(13, 13, 13);
+    background-color:#42db94;
+}
+
+
+header {
+    background-image: url('images/header_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    text-align: center;
+    line-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#000;
+    margin-top: 50px;
+    padding: 5% 2%;
+    opacity: 0.9;
+}
+
+.header-title{
+    font-size: 56px;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 2;
+    padding-top: 6px;
+
+}
+.header-cont{
+    max-width: 600px;
+    text-align: center;
+    margin: 20px 0;
+    line-height: 1.5;
+
+}
+
+.product{
+    width: 100%;
+    min-height: 400px;
+    padding: 3% 5%;
+    background-color: rgb(114, 216, 218);
+}
+
+.product-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    
+}
+
+.title{
+    line-height:1.5;
+    letter-spacing: 1;
+    font-size: 40px;
+    padding-bottom: 2%;
+}
+
+.product-wrapper{
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-around;
+    
+    color:var(--whiteColor);
+    font-size: 3%;
+    box-shadow: #c29109;
+}
+.product-card{
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-between;
+    background-color: #000000ef;
+    padding:2% 1%;
+    text-align:center;
+    margin-left:3%;
+    cursor:pointer;
+    margin-bottom: 3%;
+    font-size: 18px;
+    width: 30%;
+    border-radius: 10px;
+    size: 6px;
+    
+    
+}
+.product-card:hover{
+    background-color: #19b511d8;
+    box-shadow: #aad658;
+}    
+.product-card img{
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.benefits{
+    background-color: #f36c6c;
+    padding: 2% 2% 2% 2%;
+    font-size: 15px;
+    text-decoration: none;
+
+}
+.benefits-title{
+    
+    color: #011005;
+    background-color: #8c6891;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    
+}
+
+.benefits h1 {
+    color: #0a7229;
+    padding-top: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding-bottom: 1rem;
+}
+.benefits li{
+    font-size: 1.5rem;
+    color: #150112;
+    padding-bottom: 1rem;
+    font-size: 15px;
+   
+}
+
+.testimonial{
+    background-color: #ad9d9d;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+    
+}
+
+.testimonial-wrapper{
+    width: 100%;
+    color: #fff;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.testimonial-img{
+    align-items: center;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+
+}
+
+.testimonial img{ 
+    border-radius: 20%;
+    width: 50%;
+    justify-items: center;
+    
+}
+
+.testimonial-wrapper p{
+    font-size: 1.5rem;
+    text-align: center;
+    justify-items: center;
+
+}
+.testimonial-details{
+    align-items: center;
+    padding-bottom: 2rem;
+    text-align: center;
+    font-size: 30px;
+    -webkit-text-fill-color: #ba1315;
+    
+}
+
+.newsletter{
+    width: 100%;
+    height: auto;
+    padding: 5% 5% 2% 5%;
+    background-color: #452525;
+    color: #f4f4f4;
+    padding:5%;
+    
+}
+
+.newsletter-wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 3%;
+}
+
+.newsletter-card{
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.newsletter-card form{
+    width: 100%;
+}
+
+.newsletter-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+   
+}
+
+.newsletter-form input{
+    width: 100%;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    border: none;
+    background-color:#111010;
+    border-bottom: 5px solid #7fb976;
+    
+}
+
+.newsletter-button{
+    float: right;
+    background-color:#36cc95e4;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    border: 3px solid #222;
+    border-radius: 30px;
+    cursor: pointer;
+    
+}
+
+.newsletter-button:hover{
+    background-color: rgb(43, 20, 255);
+}
+
+footer{
+    background-color: #fff;
+    color: #db492c;
+    width: 100%;
+    padding:5% 3% 3% 3%;
+
+}
+
+.footer-wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.footer-card{
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+
+.footer-card h1{
+    margin-bottom: 10px;
+    color: var(--primaryColor);
+    width: 60%;
+}
+
+.footer-card a{
+    text-decoration: none;
+    color: #222;
+    font-size: 0.9rem;
+    padding: 3px 0;
+    
+}
+
+.footer-card a:hover{
+    text-decoration: underline;
+    color:#cdd43b;
+}
+
+.divider{
+    border: none;
+    background-color: #222;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.copyright{
+    text-align: center;
+    font-size: 12px;
+}
+
+
+/*for mobile screen*/
+
+@media screen and (max-width: 600px){
+    
+    .burger-btn{
+        display: block;
+        z-index: 20;
+        cursor: pointer;
+        color: rgb(233, 48, 48);
+
+    }
+    .nav-menus{
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: none;
+        height: 100vh;
+        text-align: center;
+        padding: 5rem 0;
+        box-shadow: rgb(0, 0, 0,0.24)0px 3px 8px;
+
+    }
+    .nav-menus.active{
+        display: flex;
+         
+    }
+    .nav-menus .a{
+        color: var(--primaryColor);
+        padding: 1.5rem 0;
+    }
+    .header-title{
+        font-size: 32px;
+    }
+    .title{
+        font-size: 30px;
+    }
+}
